@@ -42,15 +42,31 @@ class MyWidget extends StatelessWidget {
             child: TextField(
               style: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
               decoration: InputDecoration(
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                        color: Color.fromARGB(255, 0, 0, 0), width: 1.0),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black, width: 1.0),
+                  ),
+                  hintText: 'Você já é investidor?',
+                  hintStyle: TextStyle(color: Color.fromARGB(255, 0, 0, 0))),
+            ),
+          ),
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: TextField(
+              style: TextStyle(color: Colors.black),
+              decoration: InputDecoration(
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(
-                      color: Color.fromARGB(255, 0, 0, 0), width: 1.0),
+                      color: Color.fromRGBO(97, 0, 97, 1), width: 1.0),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.black, width: 1.0),
                 ),
-                hintText: 'Voce já é investidor?',
-                 hintStyle: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+                hintText: 'Você está endividado?',
+                hintStyle: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
               ),
             ),
           ),
@@ -66,25 +82,9 @@ class MyWidget extends StatelessWidget {
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.black, width: 1.0),
                 ),
-             hintText: 'Voce está endividado?',
-                 hintStyle: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
-              ),
-            ),
-          ),
-          const Padding(
-            padding: EdgeInsets.all(16.0),
-            child: TextField(
-              style: TextStyle(color: Colors.black),
-              decoration: InputDecoration(
-                focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(
-                      color: Color.fromRGBO(97, 0, 97, 1), width: 1.0),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black, width: 1.0),
-                ),
-               hintText: 'Voce se considera uma pessoa controlada financeiramente?',
-                 hintStyle: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
+                hintText:
+                    'Você se considera uma pessoa controlada financeiramente?',
+                hintStyle: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
               ),
             ),
           ),
