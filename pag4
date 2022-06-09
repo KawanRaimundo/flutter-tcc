@@ -49,8 +49,8 @@ class MyWidget extends StatelessWidget {
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.black, width: 1.0),
                   ),
-                  hintText: 'Coloque seu email:',
-                  hintStyle: TextStyle(color: Color.fromARGB(255, 0, 0, 0))),
+                  labelText: 'Coloque seu email',
+                  labelStyle: TextStyle(color: Color.fromARGB(255, 0, 0, 0))),
             ),
           ),
           Padding(
