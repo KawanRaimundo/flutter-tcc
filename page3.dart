@@ -49,7 +49,8 @@ class MyWidget extends StatelessWidget {
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.black, width: 1.0),
                 ),
-                hintText: 'sdfsdfsdfds',
+                hintText: 'Voce já é investidor?',
+                 hintStyle: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
               ),
             ),
           ),
@@ -65,7 +66,8 @@ class MyWidget extends StatelessWidget {
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.black, width: 1.0),
                 ),
-                hintText: 'horario',
+             hintText: 'Voce está endividado?',
+                 hintStyle: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
               ),
             ),
           ),
@@ -81,7 +83,8 @@ class MyWidget extends StatelessWidget {
                 enabledBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.black, width: 1.0),
                 ),
-                hintText: 'Horario',
+               hintText: 'Voce se considera uma pessoa controlada financeiramente?',
+                 hintStyle: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
               ),
             ),
           ),
